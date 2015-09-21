@@ -4,11 +4,19 @@
  * and open the template in the editor.
  */
 package dip.lab3.student.solution1;
+import java.util.Scanner;
 
 /**
  *
  * @author John
  */
 public class ScreenReader implements Reader{
+    @Override
+    public String readln(){
+        System.out.println("Enter the message you would like to send: ");
+        
+        Scanner keyboard = new Scanner(System.in);
+        return keyboard.nextLine();
+    }
     
 }

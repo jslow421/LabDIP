@@ -9,10 +9,13 @@ package dip.lab3.student.solution1;
  *
  * @author John
  */
-public class ConsoleWriter implements Writer{
-     @Override
-    public void writeln(String line){
-        System.out.println("Message: ");
-        System.out.println(line);
+public class Run {
+    public static void main(String[] args) {
+        Reader reader = new ScreenReader();
+        Writer writer = new ConsoleWriter();
+        
+        Messager message1 = new Messager(reader, writer);
+        
+        message1.message();
     }
 }
