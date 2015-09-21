@@ -9,6 +9,8 @@ package dip.lab1.student.solution1;
  *
  * @author John
  */
-public interface Employee {
-    public abstract double getAnnualWage();
+public class HumanResources {
+    public double annualCompensationPerEmployee(Employee e){
+        return e.getAnnualWage();
+    }
 }

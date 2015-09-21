@@ -23,6 +23,9 @@ public class HourlyEmployee implements Employee{
     }
 
     public final void setHourlyRate(double hourlyRate) {
+        if(hourlyRate < 0 || hourlyRate > 500) {
+            throw new IllegalArgumentException();
+        }
         this.hourlyRate = hourlyRate;
     }
 
@@ -31,11 +34,14 @@ public class HourlyEmployee implements Employee{
     }
 
     public final void setHoursWorked(double hoursWorked) {
+         if(hoursWorked < 0 || hoursWorked > 5000) {
+            throw new IllegalArgumentException();
+        }
         this.hoursWorked = hoursWorked;
     }
     
     @Override
-    public final double getAnnualWages(){
+    public final double getAnnualWage(){
     return hourlyRate * hoursWorked;
 }
     
