@@ -10,5 +10,5 @@ package dip.lab3.student.solution1;
  * @author John
  */
 public interface Reader {
-    
+    public abstract String readln();
 }
