@@ -58,7 +58,6 @@ public class Bag implements Service{
         return tipAmount;
     }
     public final void setServiceRating(ServiceQuality q) {
-        // No need to validate because enums provide type safety!
         serviceQuality = q;
     }
 

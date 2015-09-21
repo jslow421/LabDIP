@@ -14,10 +14,16 @@ public class Startup {
         
         
         Service bag1 = new Bag(Bag.ServiceQuality.GOOD, 5);
+        Service bag2 = new Bag(Bag.ServiceQuality.FAIR, 5);
+        
+        Service food1 = new Food(Food.ServiceQuality.GOOD, 20);
         
         Calculator tipCalc = new Calculator();
         
         System.out.println("Total tip is: " + tipCalc.calculateTip(bag1));
+        System.out.println("Total tip is: " + tipCalc.calculateTip(bag2));
+        System.out.println("Total tip is: " + tipCalc.calculateTip(food1));
+        
         
         
         
