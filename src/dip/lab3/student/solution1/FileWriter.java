@@ -9,10 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author John
  */
-public class FileWriter implements Writer{
-    @Override
-    public void writeln(String line){
-        System.out.println("New message: ");
-        System.out.println(line);
-    }
+public class FileWriter implements Output{
+    
 }

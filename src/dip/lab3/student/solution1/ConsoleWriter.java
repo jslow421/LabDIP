@@ -9,7 +9,7 @@ package dip.lab3.student.solution1;
  *
  * @author John
  */
-public class ConsoleWriter implements Writer{
+public class ConsoleWriter implements Output{
      @Override
     public void writeln(String line){
         System.out.println("Message: ");

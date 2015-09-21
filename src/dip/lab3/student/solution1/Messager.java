@@ -10,17 +10,18 @@ package dip.lab3.student.solution1;
  * @author John
  */
 public class Messager {
-    private Reader reader;
-    private Writer writer;
+    private Input input;
+    private Output output;
 
-    public Messager(Reader reader, Writer writer) {
-        this.reader = reader;
-        this.writer = writer;
+    public Messager(Input reader, Output writer) {
+        this.input = reader;
+        this.output = writer;
     }
     
     public void message(){
-        String line = reader.readln();
-        writer.writeln(line);
+        String line = input.readln();
+        output.writeln(line);
+        output.writeln(input.readln());
     }
     
     

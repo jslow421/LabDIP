@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author John
  */
-public class ScreenReader implements Reader{
+public class ScreenReader implements Input{
     @Override
     public String readln(){
         System.out.println("Enter the message you would like to send: ");

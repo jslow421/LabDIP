@@ -9,7 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author John
  */
-public interface Writer {
-    public abstract void writeln(String line);
-    
+public interface Input {
+    public abstract String readln();
 }

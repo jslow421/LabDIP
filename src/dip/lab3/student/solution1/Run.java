@@ -11,10 +11,10 @@ package dip.lab3.student.solution1;
  */
 public class Run {
     public static void main(String[] args) {
-        Reader reader = new ScreenReader();
-        Writer writer = new ConsoleWriter();
+        Input input = new ScreenReader();
+        Output output = new ConsoleWriter();
         
-        Messager message1 = new Messager(reader, writer);
+        Messager message1 = new Messager(input, output);
         
         message1.message();
     }
